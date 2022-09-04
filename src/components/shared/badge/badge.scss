@@ -1,0 +1,21 @@
+.badge {
+    padding: 0.5rem 1rem;
+    display: inline-block;
+    background-color: #fff;
+    border: 2px solid var(--color-primary);
+    border-radius: 32px;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    color: var(--color-primary);
+}
+
+.badge-primary {
+    padding: 0.5rem 1rem;
+    display: inline-block;
+    background-color: var(--color-primary);
+    border: 2px solid var(--color-primary);
+    border-radius: 32px;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    color: #fff;
+}

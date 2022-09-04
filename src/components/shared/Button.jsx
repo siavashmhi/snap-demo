@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
+
 const Button1 = styled.button`
     cursor: pointer;
     outline: none;
@@ -16,7 +17,7 @@ const Button1 = styled.button`
     font-family: iranYekan;
     @media (min-width: 1024px){
         font-size: 1.6rem;
-    }
+    };
 `
 
 const Button = (props) => {
