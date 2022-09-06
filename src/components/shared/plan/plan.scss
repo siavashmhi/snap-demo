@@ -1,12 +1,13 @@
 .block-plan {
     display: grid;
-    gap: 2rem 3rem;
-    margin-top: 20px;
+    gap: 5rem 3rem;
+    margin-top: 5rem;
 }
 
 .plan {
     font-size: 1.8rem;
     max-width: 450px;
+    transition: all 0.2s ease-out;
 }
 
 .card {
@@ -57,6 +58,18 @@
 .plan__description {
     margin-top: 1.5rem;
     display: block;
+}
+
+.plan--popular {
+    transform: scale(1.1);
+}
+
+.plan:hover {
+    transform: scale(1.05);
+}
+
+.plan--popular:hover {
+    transform: scale(1.15);
 }
 
 @media screen and (min-width: 1024px) {

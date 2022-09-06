@@ -1,0 +1,38 @@
+.btn {
+    outline: none;
+    padding: 2rem 2.5rem;
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+    font-family: iranYekan;
+    margin: 1rem 0;
+    text-align: center;
+    white-space: nowrap;
+    font-size: 1.4rem;
+}
+
+.btn--primary {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+}
+
+.btn--secoundary {
+    background-color: var(--color-secondary-dark);
+    color: var(--color-white);
+}
+
+.btn--block {
+    margin-top: 7rem;
+    width: 100%;
+    font-size: 1.6rem;
+}
+
+@media screen and (min-width: 1024px) {
+    .btn {
+        font-size: 1.6rem;
+    }
+
+    .btn--block {
+        font-size: 1.8rem;
+    }
+}

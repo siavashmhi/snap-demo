@@ -1,10 +1,11 @@
 import React from 'react';
 import List from '../list/List';
 import Badge from '../badge/Badge';
+import Button from '../button/Button';
 
 const Card = (props) => {
 
-    const {cardClass, badgeClass} = props
+    const {cardClass, badgeClass, btnClass} = props
 
     return (
         <div className={cardClass}>
@@ -25,6 +26,9 @@ const Card = (props) => {
                 item3='زمان محدود'
                 item4='سرویس روزانه'
                 />
+                <div>
+                    <Button className={btnClass} />
+                </div>
             </div>
     </div>
     );
