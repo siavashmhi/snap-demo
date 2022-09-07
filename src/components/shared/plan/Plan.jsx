@@ -5,7 +5,7 @@ import './plan.scss'
 const Plan = () => {
 
     return (
-        <div className='block-plan'>
+        <div className='block-plan container'>
             <div className="plan">
                 <Card
                  cardClass='card card--secoundary'

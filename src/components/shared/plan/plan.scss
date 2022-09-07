@@ -1,6 +1,13 @@
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
 .block-plan {
     display: grid;
-    gap: 5rem 3rem;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 350px));
+    gap: 7rem 4rem;
     margin-top: 5rem;
 }
 
@@ -21,14 +28,18 @@
     padding: 3rem 2.5rem;
 }
 
-.card--secoundary .card__header {
-    background-color: var(--color-secondary-dark);
-    color: var(--color-white);
+.card--secoundary {
+    .card__header {
+        background-color: var(--color-secondary-dark);
+        color: var(--color-white);
+    }
 }
 
-.card--primary .card__header {
-    background-color: var(--color-primary-light);
-    color: var(--color-white);
+.card--primary {
+    .card__header {
+        background-color: var(--color-primary-light);
+        color: var(--color-white);
+    }
 }
 
 .card__body {
@@ -73,8 +84,6 @@
 }
 
 @media screen and (min-width: 1024px) {
-    .block-plan {
-        grid-template-columns: repeat(3, 1fr);
-    }
+
 }
 
