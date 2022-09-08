@@ -6,6 +6,7 @@ body {
     font-family: iranYekan;
     color: var(--color-body);
     font-size: 1.4rem;
+    line-height: 3rem;
 }
 
 h1, h2, h3 {

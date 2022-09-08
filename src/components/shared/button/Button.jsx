@@ -1,10 +1,10 @@
 import React from 'react';
 import './button.scss'
 
-const Button = ({className}) => {
+const Button = ({className, text}) => {
     return (
         <button className={className}>
-            ورود و ثبت نام پنل سازمانی
+            {text}
         </button>
     );
 };
