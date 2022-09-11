@@ -2,7 +2,6 @@ import React from 'react';
 import './list.scss'
 
 const List = (props) => {
-
     const {listClass, item1, item2, item3, item4} = props
 
     return (

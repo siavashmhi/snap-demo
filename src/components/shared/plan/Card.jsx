@@ -4,7 +4,6 @@ import Badge from '../badge/Badge';
 import Button from '../button/Button';
 
 const Card = (props) => {
-
     const {cardClass, badgeClass, btnClass} = props
 
     return (

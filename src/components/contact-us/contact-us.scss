@@ -1,0 +1,140 @@
+.contact-us--container {
+    width: 1140px;
+    margin: 0 auto;
+}
+
+.contact-us {
+    display: grid;
+    margin-top: 2rem;
+    gap: 2rem 0;
+}
+
+.contact-us__map {
+    display: none;
+}
+
+.contact-us__information {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact-us__address,
+.contact-us__phone-number,
+.contact-us__email {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 3rem;
+    gap: 1rem;
+    span {
+        color: #303030;
+        display: block;
+        order: 1;
+        width: 100px;
+        margin-left: 10rem;
+        font-size: 1.2rem;
+    }
+    img {
+        order: 2;
+        cursor: pointer;
+    }
+}
+
+.contact-us__information {
+    img {
+        width: 40px;
+        height: 40px;
+    } 
+}
+
+.contact-us__icons {
+    margin-top: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    span {
+        margin-right: 4rem;
+        img {
+            cursor: pointer;
+            width: 40px;
+            height: 40px;
+        }
+    }
+}
+
+.contact-us__form {
+    margin: 0 auto;
+}
+
+@media screen and (min-width: 1024px) {
+    .contact-us {
+        grid-template-areas: 
+            "information form"
+            "map form"
+            "icons form";
+        
+        grid-template-columns: 70fr 30fr;
+        gap: 0 6rem;
+        
+        .contact-us__form {
+            grid-area: form;
+            color: white;
+            height: auto;
+            margin: 0;
+        }
+        .contact-us__information {
+            grid-area: information;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .contact-us__map {
+            grid-area: map;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 3rem;
+            color: white;
+            img {
+                width: 100%;
+                border-radius: 10px;
+                cursor: pointer;
+            }
+        }
+        .contact-us__icons {
+            grid-area: icons;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: 5rem;
+        }
+
+        .contact-us__address,
+        .contact-us__phone-number,
+        .contact-us__email {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            span {
+                order: 2;
+                text-align: center;
+                width: 100px;
+            }
+            img {
+                order: 1;
+            }
+        }
+
+        .contact-us__address,
+        .contact-us__phone-number {
+            span {
+                margin-right: 8rem;
+            }
+        }
+    }
+}

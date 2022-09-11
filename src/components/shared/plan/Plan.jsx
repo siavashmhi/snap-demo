@@ -3,7 +3,6 @@ import Card from './Card.jsx';
 import './plan.scss'
 
 const Plan = () => {
-
     return (
         <div className='block-plan container'>
             <div className="plan">
