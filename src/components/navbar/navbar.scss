@@ -18,13 +18,16 @@
 
 .nav__list {
     width: 100%;
-    background-color: #e4dfdf;
     font-size: 1.4rem;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.2s ease-out;
     a {
         text-decoration: none;
         color: #000;
         display: block;
-        text-align: center;
+        border-bottom: 1px solid #ccc;
+        padding-bottom: 1rem;
         margin-top: 2rem;
     }
     .btn {
@@ -32,20 +35,44 @@
     }
 }
 
-.nav__item {
-    a:hover {color: var(--color-primary);}
+.nav__item {a:hover {color: var(--color-primary);}}
+
+.logo {img {cursor: pointer;}}
+
+.nav__item .btn { padding: 1rem 2rem;}
+
+.btn__container { text-align: center;}
+
+.nav__toggler {
+    cursor: pointer;
 }
 
-.logo {
-    img {cursor: pointer;}
+.bar {
+    width: 25px;
+    height: 3px;
+    margin: 5px 0;
+    border-radius: 5px;
+    background-color: #000;
+    transition: all 0.4s ease-out;
 }
 
-.nav__item .btn {
-    padding: 1rem 2rem;
+.nav__menu {
+    max-height: 100vh;
 }
 
-.btn__container {
-    text-align: center;
+.nav__open {
+    .bar-one {
+        transform: rotate(-45deg) translate(-9px, 6px);
+        margin: 8px 0;
+    }
+    .bar-two {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    .bar-three {
+        transform: rotate(45deg) translate(-8px, -8px);
+        margin: 8px 0;
+    }
 }
 
 @media screen and (min-width: 768px) {
@@ -55,17 +82,21 @@
         align-items: center;
         width: auto;
         background-color: var(--color-navbar);
+        overflow: none;
+        max-height: none;
         li {
             a {
-                margin-left: 3rem;
                 font-size: 1.7rem;
                 display: inline;
+                border: none;
+                padding: 0;
+                margin: 0;
+                margin-left: 4rem;
+
             }
         }
     }
-
-    .menu {
+    .nav__toggler {
         display: none;
     }
-
 }
