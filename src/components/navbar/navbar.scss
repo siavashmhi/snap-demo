@@ -58,6 +58,8 @@
 
 .nav__menu {
     max-height: 100vh;
+    z-index: 100;
+    opacity: 1;
 }
 
 .nav__open {
