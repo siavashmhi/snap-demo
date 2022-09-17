@@ -26,7 +26,7 @@ const Card = (props) => {
                 item4='سرویس روزانه'
                 />
                 <div>
-                    <Button className={btnClass} />
+                    <Button className={btnClass} text='ثبت سفارش' />
                 </div>
             </div>
     </div>

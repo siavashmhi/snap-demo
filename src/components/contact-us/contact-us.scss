@@ -1,11 +1,11 @@
 .contact-us--container {
-    width: 1140px;
-    margin: 0 auto;
+    width: auto;
+    margin: 0;
 }
 
 .contact-us {
     display: grid;
-    margin-top: 2rem;
+    margin-top: 5rem;
     gap: 2rem 0;
 }
 
@@ -70,7 +70,12 @@
 }
 
 @media screen and (min-width: 1024px) {
+    .contact-us--container {
+        width: 1140px;
+        margin: 0 auto;
+    }
     .contact-us {
+        margin-top: 13rem;
         grid-template-areas: 
             "information form"
             "map form"

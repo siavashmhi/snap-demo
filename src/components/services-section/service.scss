@@ -4,7 +4,7 @@
 }
 
 .services {
-    margin-top: 10rem;
+    margin-top: 7rem;
 }
 
 .services__title {
@@ -48,6 +48,9 @@
 
 
 @media screen and (min-width: 1024px) {
+    .services {
+        margin-top: 13rem;
+    }
     .services__tabs {
         a {
             p {

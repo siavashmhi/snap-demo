@@ -4,7 +4,7 @@ import './feature.scss'
 
 const Feature = ({text, title, btnText, image}) => {
     return (
-        <section className='feature feature--container'>
+        <section className='feature feature--container block'>
             <div className='feature__image'>
                 <img src={image} alt="img" />
             </div>
